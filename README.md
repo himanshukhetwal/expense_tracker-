@@ -1,70 +1,189 @@
-# Getting Started with Create React App
+💰 Expense Tracker with Fraud Detection (MERN Stack)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack Expense Tracker application built using the MERN Stack (MongoDB, Express, React, Node.js).
 
-## Available Scripts
+This application allows users to manage income and expenses while also laying the foundation for overspending/fraud detection alerts.
 
-In the project directory, you can run:
+📖 Project Overview
 
-### `npm start`
+This project helps users:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Track income and expenses
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+View transaction history
 
-### `npm test`
+Monitor total balance
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Identify overspending patterns
 
-### `npm run build`
+Store data securely in MongoDB
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The backend handles API logic and database operations, while the frontend provides an interactive and user-friendly interface built in React.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🏗️ Architecture
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Frontend (React) → Backend (Express API) → MongoDB Database
 
-### `npm run eject`
+React sends API requests
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Express processes them
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+MongoDB stores the data
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🚀 Features
+🔹 Frontend (React)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Add new transactions
 
-## Learn More
+Display transaction history
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Show total balance
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Show total income & expense
 
-### Code Splitting
+Clean and responsive UI
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+API integration with backend
 
-### Analyzing the Bundle Size
+🔹 Backend (Node + Express)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+REST API structure
 
-### Making a Progressive Web App
+MongoDB integration with Mongoose
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Create & fetch transactions
 
-### Advanced Configuration
+Environment variable configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+CORS enabled
 
-### Deployment
+🔹 Smart Extension (Future Ready)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Overspending detection logic
 
-### `npm run build` fails to minify
+Email alerts using Nodemailer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+JWT Authentication
+
+Monthly analytics
+
+🛠 Tech Stack
+Frontend:
+
+React.js
+
+Axios
+
+CSS
+
+Backend:
+
+Node.js
+
+Express.js
+
+MongoDB
+
+Mongoose
+
+dotenv
+
+CORS
+
+📁 Project Structure
+expense-tracker/
+│
+├── frontend/
+│   ├── src/
+│   └── package.json
+│
+├── backend/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   └── package.json
+⚙️ Installation & Setup
+1️⃣ Clone Repository
+git clone https://github.com/yourusername/expense-tracker.git
+cd expense-tracker
+2️⃣ Setup Backend
+cd backend
+npm install
+
+Create .env file:
+
+MONGO_URI=mongodb://localhost:27017/expenseTracker
+PORT=5000
+
+Run backend:
+
+npx nodemon server.js
+3️⃣ Setup Frontend
+
+Open new terminal:
+
+cd frontend
+npm install
+npm start
+
+Frontend runs on:
+
+http://localhost:3000
+
+Backend runs on:
+
+http://localhost:5000
+📡 API Endpoints
+Get Transactions
+GET /api/transactions
+Add Transaction
+POST /api/transactions
+
+Body:
+
+{
+  "title": "Groceries",
+  "amount": 1200,
+  "type": "expense"
+}
+🎯 Learning Outcomes
+
+Full MERN stack development
+
+REST API creation
+
+MongoDB database integration
+
+React state management
+
+Frontend & backend integration
+
+Environment configuration
+
+📌 Future Improvements
+
+JWT Authentication
+
+Delete & Update transactions
+
+Charts & analytics
+
+Email alerts
+
+Deployment (Render + Vercel)
+
+👨‍💻 Author
+
+Himanshu Khetwal
+
+If you want, I can now:
+
+🔥 Make this look like a resume-level project description
+
+🧠 Add a proper “Fraud Detection Algorithm” explanation section
+
+📸 Add a screenshots section format
+
+🌍 Help you write a strong GitHub project description (short version)
+
+Tell me what you want next 😎
